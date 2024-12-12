@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mthomas\\Desktop\\sonar_integration_test_example_projects\\example_projects\\BankExample.NET\\Parasoft.Dottest.Examples.Bank\\Parasoft.Dottest.Examples.Bank.csproj": {}
+    "E:\\Temp\\BankExample.NET\\Parasoft.Dottest.Examples.Bank\\Parasoft.Dottest.Examples.Bank.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mthomas\\Desktop\\sonar_integration_test_example_projects\\example_projects\\BankExample.NET\\Parasoft.Dottest.Examples.Bank\\Parasoft.Dottest.Examples.Bank.csproj": {
+    "E:\\Temp\\BankExample.NET\\Parasoft.Dottest.Examples.Bank\\Parasoft.Dottest.Examples.Bank.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mthomas\\Desktop\\sonar_integration_test_example_projects\\example_projects\\BankExample.NET\\Parasoft.Dottest.Examples.Bank\\Parasoft.Dottest.Examples.Bank.csproj",
+        "projectUniqueName": "E:\\Temp\\BankExample.NET\\Parasoft.Dottest.Examples.Bank\\Parasoft.Dottest.Examples.Bank.csproj",
         "projectName": "Parasoft.Dottest.Examples.Bank",
-        "projectPath": "C:\\Users\\mthomas\\Desktop\\sonar_integration_test_example_projects\\example_projects\\BankExample.NET\\Parasoft.Dottest.Examples.Bank\\Parasoft.Dottest.Examples.Bank.csproj",
-        "packagesPath": "C:\\Users\\mthomas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mthomas\\Desktop\\sonar_integration_test_example_projects\\example_projects\\BankExample.NET\\Parasoft.Dottest.Examples.Bank\\obj\\",
+        "projectPath": "E:\\Temp\\BankExample.NET\\Parasoft.Dottest.Examples.Bank\\Parasoft.Dottest.Examples.Bank.csproj",
+        "packagesPath": "C:\\Users\\CD-RLIU\\.nuget\\packages\\",
+        "outputPath": "E:\\Temp\\BankExample.NET\\Parasoft.Dottest.Examples.Bank\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\mthomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\CD-RLIU\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -38,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -49,7 +50,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -58,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

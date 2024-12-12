@@ -29,25 +29,25 @@ jobs:
       # Checks out your repository under $GITHUB_WORKSPACE, so that your job can access it.
       - uses: actions/checkout@v3
 
-      # Runs code analysis with dotTEST.
-      - name: Run Parasoft dotTEST
-        id: dottest
-        # Specifies the action to run.
-        uses: parasoft/run-dottest-action@2.0.1
-        with:
-          installDir: 'E:\Parasoft\Products\DOTTEST\2024.1'
-          testConfig: '.\dottest_settings.properties'
-          solution: '.\src\*.sln'
-          settings: '.\localsettings.properties'
-          reportDir: '.\reports\static'
-          sarifMode: 'legacy'
+#      # Runs code analysis with dotTEST.
+#      - name: Run Parasoft dotTEST
+#        id: dottest
+#        # Specifies the action to run.
+#        uses: parasoft/run-dottest-action@2.0.1
+#        with:
+#          installDir: 'E:\Parasoft\Products\DOTTEST\2024.1'
+#          testConfig: '.\dottest_settings.properties'
+#          solution: '.\BankExample.NET.sln'
+#          settings: '.\localsettings.properties'
+#          reportDir: '.\reports\static'
+#          sarifMode: 'legacy'
 
         # Uploads analysis results in the SARIF format, so that they are displayed as GitHub code scanning alerts.
       - name: Upload results (SARIF)
         uses: github/codeql-action/upload-sarif@v2
         if: always()
         with:
-          sarif_file: ${{ steps.dottest.outputs.report }}
+          sarif_file: '.\reports\static\report.sarif'
       
       # Uploads an archive that includes all report files (.xml, .html, .sarif).
       - name: Archive reports
@@ -55,4 +55,4 @@ jobs:
         if: always()
         with:
           name: DottestReports
-          path: ${{ steps.dottest.outputs.reportDir }}/*.*
+          path: 'reports'

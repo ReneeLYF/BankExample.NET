@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Parasoft.Dottest.Examples.Bank")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5baba91675270c0cd9daf77998c54dff6c2e5b41")]
 [assembly: System.Reflection.AssemblyProductAttribute("Parasoft.Dottest.Examples.Bank")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Parasoft.Dottest.Examples.Bank")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

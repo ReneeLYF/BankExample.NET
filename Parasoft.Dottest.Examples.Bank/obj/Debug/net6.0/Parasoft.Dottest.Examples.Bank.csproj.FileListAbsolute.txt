@@ -34,3 +34,15 @@ C:\Users\mthomas\Desktop\sonar_integration_test_example_projects\example_project
 C:\Users\mthomas\Desktop\sonar_integration_test_example_projects\example_projects\BankExample.NET\Parasoft.Dottest.Examples.Bank\obj\Debug\net6.0\refint\Parasoft.Dottest.Examples.Bank.dll
 C:\Users\mthomas\Desktop\sonar_integration_test_example_projects\example_projects\BankExample.NET\Parasoft.Dottest.Examples.Bank\obj\Debug\net6.0\Parasoft.Dottest.Examples.Bank.pdb
 C:\Users\mthomas\Desktop\sonar_integration_test_example_projects\example_projects\BankExample.NET\Parasoft.Dottest.Examples.Bank\obj\Debug\net6.0\ref\Parasoft.Dottest.Examples.Bank.dll
+E:\Temp\BankExample.NET\Parasoft.Dottest.Examples.Bank\bin\Debug\net6.0\Parasoft.Dottest.Examples.Bank.deps.json
+E:\Temp\BankExample.NET\Parasoft.Dottest.Examples.Bank\bin\Debug\net6.0\Parasoft.Dottest.Examples.Bank.dll
+E:\Temp\BankExample.NET\Parasoft.Dottest.Examples.Bank\bin\Debug\net6.0\Parasoft.Dottest.Examples.Bank.pdb
+E:\Temp\BankExample.NET\Parasoft.Dottest.Examples.Bank\obj\Debug\net6.0\Parasoft.Dottest.Examples.Bank.GeneratedMSBuildEditorConfig.editorconfig
+E:\Temp\BankExample.NET\Parasoft.Dottest.Examples.Bank\obj\Debug\net6.0\Parasoft.Dottest.Examples.Bank.AssemblyInfoInputs.cache
+E:\Temp\BankExample.NET\Parasoft.Dottest.Examples.Bank\obj\Debug\net6.0\Parasoft.Dottest.Examples.Bank.AssemblyInfo.cs
+E:\Temp\BankExample.NET\Parasoft.Dottest.Examples.Bank\obj\Debug\net6.0\Parasoft.Dottest.Examples.Bank.csproj.CoreCompileInputs.cache
+E:\Temp\BankExample.NET\Parasoft.Dottest.Examples.Bank\obj\Debug\net6.0\Parasoft.Dottest.Examples.Bank.sourcelink.json
+E:\Temp\BankExample.NET\Parasoft.Dottest.Examples.Bank\obj\Debug\net6.0\Parasoft.Dottest.Examples.Bank.dll
+E:\Temp\BankExample.NET\Parasoft.Dottest.Examples.Bank\obj\Debug\net6.0\refint\Parasoft.Dottest.Examples.Bank.dll
+E:\Temp\BankExample.NET\Parasoft.Dottest.Examples.Bank\obj\Debug\net6.0\Parasoft.Dottest.Examples.Bank.pdb
+E:\Temp\BankExample.NET\Parasoft.Dottest.Examples.Bank\obj\Debug\net6.0\ref\Parasoft.Dottest.Examples.Bank.dll
