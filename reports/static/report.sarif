@@ -49,7 +49,7 @@
                                     "Flow Analysis",
                                     "Possible Bugs"
                                 ],
-                              "security-severity" : "8.8"
+                                "security-severity" : "8.8"
                             }
                         },
                         {
@@ -70,9 +70,9 @@
                                 "tags": [
                                     "Flow Analysis",
                                     "Possible Bugs"
-                                ]
-                            },
-                          "security-severity" : "5.0"
+                                ],
+                                "security-severity" : "5.0"
+                            }
                         },
                         {
                             "id": "BD.EXCEPT.AN",
@@ -125,7 +125,7 @@
                                 "text": "Keep line length within predefined parameters [BRM.MLL]"
                             },
                             "defaultConfiguration": {
-                                "level": "warning"
+                                "level": "error"
                             },
                             "help": {
                                 "text": "Keep line length within predefined parameters [BRM.MLL]"
