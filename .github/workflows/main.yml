@@ -4,7 +4,7 @@ name: dotTEST Simple Workflow
 on:
   # Triggers the workflow on push or pull request events but only for the main branch.
   push:
-    branches: [ customize_sarif ]
+    branches: [ parse_coverage_report ]
 
   # Allows you to run this workflow manually from the Actions tab.
   workflow_dispatch:
@@ -42,17 +42,20 @@ jobs:
 #          reportDir: '.\reports\static'
 #          sarifMode: 'legacy'
 
-        # Uploads analysis results in the SARIF format, so that they are displayed as GitHub code scanning alerts.
-      - name: Upload results (SARIF)
-        uses: github/codeql-action/upload-sarif@v2
-        if: always()
-        with:
-          sarif_file: '.\reports\static\report.sarif'
+#         Uploads analysis results in the SARIF format, so that they are displayed as GitHub code scanning alerts.
+#      - name: Upload results (SARIF)
+#        uses: github/codeql-action/upload-sarif@v2
+#        if: always()
+#        with:
+#          sarif_file: '.\reports\static\report.sarif'
       
       # Uploads an archive that includes all report files (.xml, .html, .sarif).
-      - name: Archive reports
-        uses: actions/upload-artifact@v3
-        if: always()
-        with:
-          name: DottestReports
-          path: 'reports'
+#      - name: Archive reports
+#        uses: actions/upload-artifact@v3
+#        if: always()
+#        with:
+#          name: DottestReports
+#          path: 'reports'
+
+      - name: Generate The Structure of Summary Details Table
+        uses: parasoft/parasoft-coverage-action@renee_cicd959
