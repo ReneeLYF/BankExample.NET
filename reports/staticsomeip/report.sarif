@@ -1,0 +1,2829 @@
+{
+  "$schema": "https://docs.oasis-open.org/sarif/sarif/v2.1.0/errata01/os/schemas/sarif-schema-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Jtest",
+          "semanticVersion": "2024.2.0",
+          "rules": [
+            {
+              "id": "EXCEPT.NTERR",
+              "name": "Do not throw exception types which are too general or are unchecked exceptions",
+              "shortDescription": {
+                "text": "Do not throw exception types which are too general or are unchecked exceptions"
+              },
+              "fullDescription": {
+                "text": "Do not throw exception types which are too general or are unchecked exceptions [EXCEPT.NTERR]"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "help": {
+                "text": "Do not throw exception types which are too general or are unchecked exceptions [EXCEPT.NTERR]"
+              },
+              "properties": {
+                "tags": [
+                  "Exceptions"
+                ]
+              }
+            },
+            {
+              "id": "OPT.CIO",
+              "name": "Close input and output resources in \"finally\" blocks",
+              "shortDescription": {
+                "text": "Close input and output resources in \"finally\" blocks"
+              },
+              "fullDescription": {
+                "text": "Close input and output resources in \"finally\" blocks [OPT.CIO]"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "help": {
+                "text": "Close input and output resources in \"finally\" blocks [OPT.CIO]"
+              },
+              "properties": {
+                "tags": [
+                  "Optimization"
+                ]
+              }
+            },
+            {
+              "id": "OWASP2021.A5.DXXE",
+              "name": "Disable XML external entity injection",
+              "shortDescription": {
+                "text": "Disable XML external entity injection"
+              },
+              "fullDescription": {
+                "text": "Disable XML external entity injection [OWASP2021.A5.DXXE]"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "help": {
+                "text": "Disable XML external entity injection [OWASP2021.A5.DXXE]"
+              },
+              "properties": {
+                "tags": [
+                  "OWASP Top 10 Most Critical Web Application Security Risks (2021)",
+                  "A5-Security Misconfiguration"
+                ],
+                "security-severity": "8"
+              }
+            },
+            {
+              "id": "OWASP2021.A5.ACPST",
+              "name": "Do not call the 'printStackTrace()' method of \"Throwable\" objects",
+              "shortDescription": {
+                "text": "Do not call the 'printStackTrace()' method of \"Throwable\" objects"
+              },
+              "fullDescription": {
+                "text": "Do not call the 'printStackTrace()' method of \"Throwable\" objects [OWASP2021.A5.ACPST]"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "help": {
+                "text": "Do not call the 'printStackTrace()' method of \"Throwable\" objects [OWASP2021.A5.ACPST]"
+              },
+              "properties": {
+                "tags": [
+                  "OWASP Top 10 Most Critical Web Application Security Risks (2021)",
+                  "A5-Security Misconfiguration"
+                ],
+                "security-severity": "6"
+              }
+            },
+            {
+              "id": "OWASP2021.A5.NCE",
+              "name": "Do not catch exception types which are too general or are unchecked exceptions",
+              "shortDescription": {
+                "text": "Do not catch exception types which are too general or are unchecked exceptions"
+              },
+              "fullDescription": {
+                "text": "Do not catch exception types which are too general or are unchecked exceptions [OWASP2021.A5.NCE]"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "help": {
+                "text": "Do not catch exception types which are too general or are unchecked exceptions [OWASP2021.A5.NCE]"
+              },
+              "properties": {
+                "tags": [
+                  "OWASP Top 10 Most Critical Web Application Security Risks (2021)",
+                  "A5-Security Misconfiguration"
+                ],
+                "security-severity": "6"
+              }
+            },
+            {
+              "id": "OWASP2021.A5.NTERR",
+              "name": "Do not throw exception types which are too general or are unchecked exceptions",
+              "shortDescription": {
+                "text": "Do not throw exception types which are too general or are unchecked exceptions"
+              },
+              "fullDescription": {
+                "text": "Do not throw exception types which are too general or are unchecked exceptions [OWASP2021.A5.NTERR]"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "help": {
+                "text": "Do not throw exception types which are too general or are unchecked exceptions [OWASP2021.A5.NTERR]"
+              },
+              "properties": {
+                "tags": [
+                  "OWASP Top 10 Most Critical Web Application Security Risks (2021)",
+                  "A5-Security Misconfiguration"
+                ],
+                "security-severity": "6"
+              }
+            },
+            {
+              "id": "OWASP2021.A5.SIO",
+              "name": "Avoid calling print methods of 'System.err' or 'System.out'",
+              "shortDescription": {
+                "text": "Avoid calling print methods of 'System.err' or 'System.out'"
+              },
+              "fullDescription": {
+                "text": "Avoid calling print methods of 'System.err' or 'System.out' [OWASP2021.A5.SIO]"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "help": {
+                "text": "Avoid calling print methods of 'System.err' or 'System.out' [OWASP2021.A5.SIO]"
+              },
+              "properties": {
+                "tags": [
+                  "OWASP Top 10 Most Critical Web Application Security Risks (2021)",
+                  "A5-Security Misconfiguration"
+                ],
+                "security-severity": "6"
+              }
+            },
+            {
+              "id": "OWASP2021.A9.LGE",
+              "name": "Ensure all exceptions are either logged with a standard logger or rethrown",
+              "shortDescription": {
+                "text": "Ensure all exceptions are either logged with a standard logger or rethrown"
+              },
+              "fullDescription": {
+                "text": "Ensure all exceptions are either logged with a standard logger or rethrown [OWASP2021.A9.LGE]"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "help": {
+                "text": "Ensure all exceptions are either logged with a standard logger or rethrown [OWASP2021.A9.LGE]"
+              },
+              "properties": {
+                "tags": [
+                  "OWASP Top 10 Most Critical Web Application Security Risks (2021)",
+                  "A9-Security Logging and Monitoring Failures"
+                ],
+                "security-severity": "8"
+              }
+            },
+            {
+              "id": "OWASP2021.A3.CDBV",
+              "name": "Canonicalize data before validation",
+              "shortDescription": {
+                "text": "Canonicalize data before validation"
+              },
+              "fullDescription": {
+                "text": "Canonicalize data before validation [OWASP2021.A3.CDBV]"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "help": {
+                "text": "Canonicalize data before validation [OWASP2021.A3.CDBV]"
+              },
+              "properties": {
+                "tags": [
+                  "OWASP Top 10 Most Critical Web Application Security Risks (2021)",
+                  "A3-Injection"
+                ],
+                "security-severity": "9.5"
+              }
+            },
+            {
+              "id": "OWASP2021.A2.PEO",
+              "name": "Do not pass exception messages into output in order to prevent the application from leaking sensitive information",
+              "shortDescription": {
+                "text": "Do not pass exception messages into output in order to prevent the application from leaking sensitive information"
+              },
+              "fullDescription": {
+                "text": "Do not pass exception messages into output in order to prevent the application from leaking sensitive information [OWASP2021.A2.PEO]"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "help": {
+                "text": "Do not pass exception messages into output in order to prevent the application from leaking sensitive information [OWASP2021.A2.PEO]"
+              },
+              "properties": {
+                "tags": [
+                  "OWASP Top 10 Most Critical Web Application Security Risks (2021)",
+                  "A2-Cryptographic Failures"
+                ],
+                "security-severity": "9.5"
+              }
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "OWASP2021.A3.TDRESP",
+          "level": "error",
+          "message": {
+            "text": "Data obtained from a Spring HTTP request (\"ecuAppConfigService.getEcuApplicationConfig(ecuName, appName)\") is injected to http response",
+            "markdown": "**\\[Line 85\\] Data obtained from a Spring HTTP request \\(\"ecuAppConfigService\\.getEcuApplicationConfig\\(ecuName, appName\\)\"\\) is injected to http response**  \n  \n**Tainting point**  \nEcuAppConfigController.java&nbsp;(78)&nbsp;:&nbsp;getEcuAppConfig\\(&nbsp;&nbsp;_\\*\\*\\*&nbsp;Tainted data: appName_  \nEcuAppConfigController.java&nbsp;(85)&nbsp;:&nbsp;ecuAppConfigService\\.getEcuApplicationConfig\\(ecuName, appName\\)  \n        EcuAppConfigService.java&nbsp;(31)&nbsp;:&nbsp;\\{&nbsp;&nbsp;_\\*\\*\\*&nbsp;Tainted data: appName_  \n        EcuAppConfigService.java&nbsp;(32)&nbsp;:&nbsp;ecuAndAppConfigCache\\.getApp\\(ecuName, appName\\)  \n                EcuAndAppConfigCache.java&nbsp;(62)&nbsp;:&nbsp;EcuAndAppConfigWrapper ecuAndAppConfigWrapper = ecuAndAppConfigsCache\\.get\\(ecuName\\.toLowerCase\\(\\)\\);&nbsp;&nbsp;_\\*\\*\\*&nbsp;Tainted data: appName_  \n                EcuAndAppConfigCache.java&nbsp;(63)&nbsp;:&nbsp;if \\(ecuAndAppConfigWrapper == null\\) \\{&nbsp;&nbsp;_\\*\\*\\*&nbsp;Condition evaluation: \\(ecuAndAppConfigWrapper == null\\) \\(assuming false\\)_  \n                EcuAndAppConfigCache.java&nbsp;(66)&nbsp;:&nbsp;ecuAndAppConfigWrapper\\.getAppConfigsCache\\(\\)  \n                        EcuAndAppConfigCache.java&nbsp;(119)&nbsp;:&nbsp;@Getter  \n                EcuAndAppConfigCache.java&nbsp;(66)&nbsp;:&nbsp;EcuAppConfigDto ecuAppConfigDto = ecuAndAppConfigWrapper\\.getAppConfigsCache\\(\\)\\.get\\(appName\\.toLowerCase\\(\\)\\);  \n                EcuAndAppConfigCache.java&nbsp;(67)&nbsp;:&nbsp;if \\(ecuAppConfigDto == null\\) \\{&nbsp;&nbsp;_\\*\\*\\*&nbsp;Tainted data: ecuAppConfigDto_&nbsp;&nbsp;_\\*\\*\\*&nbsp;Condition evaluation: \\(ecuAppConfigDto == null\\) \\(assuming false\\)_  \n                EcuAndAppConfigCache.java&nbsp;(70)&nbsp;:&nbsp;return ecuAppConfigDto;  \n        EcuAppConfigService.java&nbsp;(32)&nbsp;:&nbsp;return ecuAndAppConfigCache\\.getApp\\(ecuName, appName\\);&nbsp;&nbsp;_\\*\\*\\*&nbsp;Tainted data: ecuAndAppConfigCache\\.getApp\\(ecuName, appName\\)_  \n        EcuAppConfigService.java&nbsp;(33)&nbsp;:&nbsp;\\}&nbsp;&nbsp;_\\*\\*\\*&nbsp;Tainted data: <returned value of getEcuApplicationConfig\\(\\)>_  \n**Point of return tainted data**&nbsp;  \nEcuAppConfigController.java&nbsp;(85)&nbsp;:&nbsp;return new ResponseEntity<>\\(ecuAppConfigService\\.getEcuApplicationConfig\\(ecuName, appName\\), HttpStatus\\.OK\\);&nbsp;&nbsp;_\\*\\*\\*&nbsp;Tainted data: ecuAppConfigService\\.getEcuApplicationConfig\\(ecuName, appName\\)_"
+          },
+          "partialFingerprints": {
+            "violType": "FlowViol",
+            "lineHash": "1198921481",
+            "unbViolId": "3d3f4821-0f67-30f7-a190-1ef7cdbf78f6"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuAppConfigController.java"
+                },
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 9,
+                  "endColumn": 115
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuAppConfigController.java"
+                          },
+                          "region": {
+                            "startLine": 78,
+                            "startColumn": 44,
+                            "endLine": 84,
+                            "endColumn": 29
+                          }
+                        },
+                        "message": {
+                          "text": "Violation Cause - Tainting point  *** Tainted data: appName"
+                        }
+                      },
+                      "nestingLevel": 0
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuAppConfigController.java"
+                          },
+                          "region": {
+                            "startLine": 85,
+                            "startColumn": 37,
+                            "endColumn": 98
+                          }
+                        }
+                      },
+                      "nestingLevel": 0
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuAppConfigService.java"
+                          },
+                          "region": {
+                            "startLine": 31,
+                            "startColumn": 97,
+                            "endLine": 33,
+                            "endColumn": 6
+                          }
+                        },
+                        "message": {
+                          "text": "  *** Tainted data: appName"
+                        }
+                      },
+                      "nestingLevel": 1
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuAppConfigService.java"
+                          },
+                          "region": {
+                            "startLine": 32,
+                            "startColumn": 16,
+                            "endColumn": 61
+                          }
+                        }
+                      },
+                      "nestingLevel": 1
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuAndAppConfigCache.java"
+                          },
+                          "region": {
+                            "startLine": 62,
+                            "startColumn": 9,
+                            "endColumn": 106
+                          }
+                        },
+                        "message": {
+                          "text": "  *** Tainted data: appName"
+                        }
+                      },
+                      "nestingLevel": 2
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuAndAppConfigCache.java"
+                          },
+                          "region": {
+                            "startLine": 63,
+                            "startColumn": 9,
+                            "endColumn": 46
+                          }
+                        },
+                        "message": {
+                          "text": "  *** Condition evaluation: (ecuAndAppConfigWrapper == null) (assuming false)"
+                        }
+                      },
+                      "nestingLevel": 2
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuAndAppConfigCache.java"
+                          },
+                          "region": {
+                            "startLine": 66,
+                            "startColumn": 43,
+                            "endColumn": 86
+                          }
+                        }
+                      },
+                      "nestingLevel": 2
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuAndAppConfigCache.java"
+                          },
+                          "region": {
+                            "startLine": 119,
+                            "startColumn": 5,
+                            "endColumn": 12
+                          }
+                        }
+                      },
+                      "nestingLevel": 3
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuAndAppConfigCache.java"
+                          },
+                          "region": {
+                            "startLine": 66,
+                            "startColumn": 9,
+                            "endColumn": 114
+                          }
+                        }
+                      },
+                      "nestingLevel": 2
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuAndAppConfigCache.java"
+                          },
+                          "region": {
+                            "startLine": 67,
+                            "startColumn": 9,
+                            "endColumn": 39
+                          }
+                        },
+                        "message": {
+                          "text": "  *** Tainted data: ecuAppConfigDto  *** Condition evaluation: (ecuAppConfigDto == null) (assuming false)"
+                        }
+                      },
+                      "nestingLevel": 2
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuAndAppConfigCache.java"
+                          },
+                          "region": {
+                            "startLine": 70,
+                            "startColumn": 9,
+                            "endColumn": 32
+                          }
+                        }
+                      },
+                      "nestingLevel": 2
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuAppConfigService.java"
+                          },
+                          "region": {
+                            "startLine": 32,
+                            "startColumn": 9,
+                            "endColumn": 62
+                          }
+                        },
+                        "message": {
+                          "text": "  *** Tainted data: ecuAndAppConfigCache.getApp(ecuName, appName)"
+                        }
+                      },
+                      "nestingLevel": 1
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuAppConfigService.java"
+                          },
+                          "region": {
+                            "startLine": 33,
+                            "startColumn": 5,
+                            "endColumn": 6
+                          }
+                        },
+                        "message": {
+                          "text": "  *** Tainted data: <returned value of getEcuApplicationConfig()>"
+                        }
+                      },
+                      "nestingLevel": 1
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuAppConfigController.java"
+                          },
+                          "region": {
+                            "startLine": 85,
+                            "startColumn": 9,
+                            "endColumn": 115
+                          }
+                        },
+                        "message": {
+                          "text": "Violation Point - Point of return tainted data  *** Tainted data: ecuAppConfigService.getEcuApplicationConfig(ecuName, appName)"
+                        }
+                      },
+                      "nestingLevel": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "suppressions": [
+            {
+              "kind": "external"
+            }
+          ]
+        },
+        {
+          "ruleId": "OWASP2021.A3.TDRESP",
+          "level": "error",
+          "message": {
+            "text": "Data obtained from a Spring HTTP request (\"ecuConfigService.getEcuConfig(ecuName)\") is injected to http response",
+            "markdown": "**\\[Line 88\\] Data obtained from a Spring HTTP request \\(\"ecuConfigService\\.getEcuConfig\\(ecuName\\)\"\\) is injected to http response**  \n  \n**Tainting point**  \nEcuConfigController.java&nbsp;(84)&nbsp;:&nbsp;getEcuConfig\\(&nbsp;&nbsp;_\\*\\*\\*&nbsp;Tainted data: ecuName_  \nEcuConfigController.java&nbsp;(88)&nbsp;:&nbsp;ecuConfigService\\.getEcuConfig\\(ecuName\\)  \n        EcuConfigService.java&nbsp;(26)&nbsp;:&nbsp;\\{&nbsp;&nbsp;_\\*\\*\\*&nbsp;Tainted data: ecuName_  \n        EcuConfigService.java&nbsp;(27)&nbsp;:&nbsp;ecuAndAppConfigCache\\.getEcu\\(ecuName\\)  \n                EcuAndAppConfigCache.java&nbsp;(24)&nbsp;:&nbsp;EcuAndAppConfigWrapper ecuAndAppConfigWrapper = ecuAndAppConfigsCache\\.get\\(name\\.toLowerCase\\(\\)\\);&nbsp;&nbsp;_\\*\\*\\*&nbsp;Tainted data: name_  \n                EcuAndAppConfigCache.java&nbsp;(25)&nbsp;:&nbsp;if \\(ecuAndAppConfigWrapper == null\\) \\{&nbsp;&nbsp;_\\*\\*\\*&nbsp;Tainted data: ecuAndAppConfigWrapper_&nbsp;&nbsp;_\\*\\*\\*&nbsp;Condition evaluation: \\(ecuAndAppConfigWrapper == null\\) \\(assuming false\\)_  \n                EcuAndAppConfigCache.java&nbsp;(28)&nbsp;:&nbsp;ecuAndAppConfigWrapper\\.getEcuConfigDto\\(\\)  \n                        EcuAndAppConfigCache.java&nbsp;(119)&nbsp;:&nbsp;@Getter&nbsp;&nbsp;_\\*\\*\\*&nbsp;Tainted data: this_  \n                EcuAndAppConfigCache.java&nbsp;(28)&nbsp;:&nbsp;return ecuAndAppConfigWrapper\\.getEcuConfigDto\\(\\);  \n        EcuConfigService.java&nbsp;(27)&nbsp;:&nbsp;return ecuAndAppConfigCache\\.getEcu\\(ecuName\\);&nbsp;&nbsp;_\\*\\*\\*&nbsp;Tainted data: ecuAndAppConfigCache\\.getEcu\\(ecuName\\)_  \n        EcuConfigService.java&nbsp;(28)&nbsp;:&nbsp;\\}&nbsp;&nbsp;_\\*\\*\\*&nbsp;Tainted data: <returned value of getEcuConfig\\(\\)>_  \n**Point of return tainted data**&nbsp;  \nEcuConfigController.java&nbsp;(88)&nbsp;:&nbsp;return new ResponseEntity<>\\(ecuConfigService\\.getEcuConfig\\(ecuName\\), HttpStatus\\.OK\\);&nbsp;&nbsp;_\\*\\*\\*&nbsp;Tainted data: ecuConfigService\\.getEcuConfig\\(ecuName\\)_"
+          },
+          "partialFingerprints": {
+            "violType": "FlowViol",
+            "lineHash": "-2129816574",
+            "unbViolId": "54de1540-85ba-3157-a69b-669e212a5d3e"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuConfigController.java"
+                },
+                "region": {
+                  "startLine": 88,
+                  "startColumn": 9,
+                  "endColumn": 92
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuConfigController.java"
+                          },
+                          "region": {
+                            "startLine": 84,
+                            "startColumn": 41,
+                            "endLine": 87,
+                            "endColumn": 29
+                          }
+                        },
+                        "message": {
+                          "text": "Violation Cause - Tainting point  *** Tainted data: ecuName"
+                        }
+                      },
+                      "nestingLevel": 0
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuConfigController.java"
+                          },
+                          "region": {
+                            "startLine": 88,
+                            "startColumn": 37,
+                            "endColumn": 75
+                          }
+                        }
+                      },
+                      "nestingLevel": 0
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuConfigService.java"
+                          },
+                          "region": {
+                            "startLine": 26,
+                            "startColumn": 67,
+                            "endLine": 28,
+                            "endColumn": 6
+                          }
+                        },
+                        "message": {
+                          "text": "  *** Tainted data: ecuName"
+                        }
+                      },
+                      "nestingLevel": 1
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuConfigService.java"
+                          },
+                          "region": {
+                            "startLine": 27,
+                            "startColumn": 16,
+                            "endColumn": 52
+                          }
+                        }
+                      },
+                      "nestingLevel": 1
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuAndAppConfigCache.java"
+                          },
+                          "region": {
+                            "startLine": 24,
+                            "startColumn": 9,
+                            "endColumn": 103
+                          }
+                        },
+                        "message": {
+                          "text": "  *** Tainted data: name"
+                        }
+                      },
+                      "nestingLevel": 2
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuAndAppConfigCache.java"
+                          },
+                          "region": {
+                            "startLine": 25,
+                            "startColumn": 9,
+                            "endColumn": 46
+                          }
+                        },
+                        "message": {
+                          "text": "  *** Tainted data: ecuAndAppConfigWrapper  *** Condition evaluation: (ecuAndAppConfigWrapper == null) (assuming false)"
+                        }
+                      },
+                      "nestingLevel": 2
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuAndAppConfigCache.java"
+                          },
+                          "region": {
+                            "startLine": 28,
+                            "startColumn": 16,
+                            "endColumn": 56
+                          }
+                        }
+                      },
+                      "nestingLevel": 2
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuAndAppConfigCache.java"
+                          },
+                          "region": {
+                            "startLine": 119,
+                            "startColumn": 5,
+                            "endColumn": 12
+                          }
+                        },
+                        "message": {
+                          "text": "  *** Tainted data: this"
+                        }
+                      },
+                      "nestingLevel": 3
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuAndAppConfigCache.java"
+                          },
+                          "region": {
+                            "startLine": 28,
+                            "startColumn": 9,
+                            "endColumn": 57
+                          }
+                        }
+                      },
+                      "nestingLevel": 2
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuConfigService.java"
+                          },
+                          "region": {
+                            "startLine": 27,
+                            "startColumn": 9,
+                            "endColumn": 53
+                          }
+                        },
+                        "message": {
+                          "text": "  *** Tainted data: ecuAndAppConfigCache.getEcu(ecuName)"
+                        }
+                      },
+                      "nestingLevel": 1
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuConfigService.java"
+                          },
+                          "region": {
+                            "startLine": 28,
+                            "startColumn": 5,
+                            "endColumn": 6
+                          }
+                        },
+                        "message": {
+                          "text": "  *** Tainted data: <returned value of getEcuConfig()>"
+                        }
+                      },
+                      "nestingLevel": 1
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuConfigController.java"
+                          },
+                          "region": {
+                            "startLine": 88,
+                            "startColumn": 9,
+                            "endColumn": 92
+                          }
+                        },
+                        "message": {
+                          "text": "Violation Point - Point of return tainted data  *** Tainted data: ecuConfigService.getEcuConfig(ecuName)"
+                        }
+                      },
+                      "nestingLevel": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "suppressions": [
+            {
+              "kind": "external"
+            }
+          ]
+        },
+        {
+          "ruleId": "OWASP2021.A4.PBFA",
+          "level": "note",
+          "message": {
+            "text": "This class uses the object of the AuthenticationFailureBadCredentialsEvent class. Ensure that sufficient protection against multiple failed authentication attempts is implemented",
+            "markdown": "**\\[Line 12\\] This class uses the object of the AuthenticationFailureBadCredentialsEvent class\\. Ensure that sufficient protection against multiple failed authentication attempts is implemented**"
+          },
+          "partialFingerprints": {
+            "violType": "StdViol",
+            "lineHash": "1800251486",
+            "unbViolId": "a0798601-98c5-3047-ab62-d04b30bf7868"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/license/SomeIpLicenseReleaseListener.java"
+                },
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 14,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "suppressions": [
+            {
+              "kind": "external"
+            }
+          ]
+        },
+        {
+          "ruleId": "OWASP2021.A5.NCE",
+          "level": "warning",
+          "message": {
+            "text": "\"catch\" statement directly catches the general exception type 'Exception'",
+            "markdown": "**\\[Line 56\\] \"catch\" statement directly catches the general exception type 'Exception'**"
+          },
+          "partialFingerprints": {
+            "violType": "StdViol",
+            "lineHash": "1175112816",
+            "unbViolId": "18acc8bd-a652-3d3a-8d71-a27cebb0f3ff"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/common/util/CoderUtil.java"
+                },
+                "region": {
+                  "startLine": 56,
+                  "startColumn": 22,
+                  "endColumn": 31
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "OWASP2021.A2.PEO",
+          "level": "error",
+          "message": {
+            "text": "Print method 'printStackTrace()' is not allowed in a \"catch\" block",
+            "markdown": "**\\[Line 58\\] Print method 'printStackTrace\\(\\)' is not allowed in a \"catch\" block**"
+          },
+          "partialFingerprints": {
+            "violType": "StdViol",
+            "lineHash": "-1928214247",
+            "unbViolId": "bbba20ae-207d-3b6a-b47e-d49a552d57d1"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/common/util/CoderUtil.java"
+                },
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 19,
+                  "endColumn": 34
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "OWASP2021.A5.ACPST",
+          "level": "warning",
+          "message": {
+            "text": "The 'printStackTrace()' method of a \"Throwable\" object is called here",
+            "markdown": "**\\[Line 58\\] The 'printStackTrace\\(\\)' method of a \"Throwable\" object is called here**"
+          },
+          "partialFingerprints": {
+            "violType": "StdViol",
+            "lineHash": "-1928214247",
+            "unbViolId": "7ae6e05a-bffe-3bbd-91f2-4d74db09deda"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/common/util/CoderUtil.java"
+                },
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 19,
+                  "endColumn": 34
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "OWASP2021.A5.NCE",
+          "level": "warning",
+          "message": {
+            "text": "\"catch\" statement directly catches the general exception type 'Throwable'",
+            "markdown": "**\\[Line 26\\] \"catch\" statement directly catches the general exception type 'Throwable'**"
+          },
+          "partialFingerprints": {
+            "violType": "StdViol",
+            "lineHash": "-975685089",
+            "unbViolId": "b9723f6a-353a-3747-878e-693cb34fcafd"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/someip/message/SomeIpMessageSchemaGenerator.java"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 18,
+                  "endColumn": 27
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "OWASP2021.A5.DXXE",
+          "level": "error",
+          "message": {
+            "text": "XXE injection has not been disabled",
+            "markdown": "**\\[Line 25\\] XXE injection has not been disabled**"
+          },
+          "partialFingerprints": {
+            "violType": "StdViol",
+            "lineHash": "-671511462",
+            "unbViolId": "090389d2-c3bf-3b22-abfc-b81e4480f60e"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/someip/message/SomeIpNativeToXml.java"
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 19,
+                  "endColumn": 43
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "OWASP2021.A5.NCE",
+          "level": "warning",
+          "message": {
+            "text": "\"catch\" statement directly catches the general exception type 'Throwable'",
+            "markdown": "**\\[Line 375\\] \"catch\" statement directly catches the general exception type 'Throwable'**"
+          },
+          "partialFingerprints": {
+            "violType": "StdViol",
+            "lineHash": "1445267300",
+            "unbViolId": "01045858-17e1-3048-beac-c237e694f884"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/someip/message/SomeIpNativeToXml.java"
+                },
+                "region": {
+                  "startLine": 375,
+                  "startColumn": 22,
+                  "endColumn": 31
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "OWASP2021.A5.DXXE",
+          "level": "error",
+          "message": {
+            "text": "XXE injection has not been disabled",
+            "markdown": "**\\[Line 31\\] XXE injection has not been disabled**"
+          },
+          "partialFingerprints": {
+            "violType": "StdViol",
+            "lineHash": "-671511462",
+            "unbViolId": "5fa921f4-8300-374c-8d97-609ce193d840"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/someip/message/SomeIpSdNativeToXml.java"
+                },
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 19,
+                  "endColumn": 43
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "OWASP2021.A5.NCE",
+          "level": "warning",
+          "message": {
+            "text": "\"catch\" statement directly catches the general exception type 'Throwable'",
+            "markdown": "**\\[Line 241\\] \"catch\" statement directly catches the general exception type 'Throwable'**"
+          },
+          "partialFingerprints": {
+            "violType": "StdViol",
+            "lineHash": "1445267300",
+            "unbViolId": "84ec6445-c25f-3dbf-9dbb-4257e656c271"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/someip/message/SomeIpSdNativeToXml.java"
+                },
+                "region": {
+                  "startLine": 241,
+                  "startColumn": 22,
+                  "endColumn": 31
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "OWASP2021.A5.NCE",
+          "level": "warning",
+          "message": {
+            "text": "\"catch\" statement directly catches the general exception type 'Throwable'",
+            "markdown": "**\\[Line 198\\] \"catch\" statement directly catches the general exception type 'Throwable'**"
+          },
+          "partialFingerprints": {
+            "violType": "StdViol",
+            "lineHash": "1445267300",
+            "unbViolId": "d67e41ad-378b-32c2-970a-3b42f186bf79"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/someip/message/SomeIpSdXmlToNative.java"
+                },
+                "region": {
+                  "startLine": 198,
+                  "startColumn": 22,
+                  "endColumn": 31
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "OWASP2021.A5.NCE",
+          "level": "warning",
+          "message": {
+            "text": "\"catch\" statement directly catches the general exception type 'Throwable'",
+            "markdown": "**\\[Line 216\\] \"catch\" statement directly catches the general exception type 'Throwable'**"
+          },
+          "partialFingerprints": {
+            "violType": "StdViol",
+            "lineHash": "1445267300",
+            "unbViolId": "ede67152-aa06-3ac1-9c9f-6b24c172b601"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/someip/message/SomeIpXmlToNative.java"
+                },
+                "region": {
+                  "startLine": 216,
+                  "startColumn": 22,
+                  "endColumn": 31
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "OWASP2021.A9.LGE",
+          "level": "error",
+          "message": {
+            "text": "The exception is neither logged nor rethrown in the \"catch\" clause. Add a comment to the clause if this is expected",
+            "markdown": "**\\[Line 79\\] The exception is neither logged nor rethrown in the \"catch\" clause\\. Add a comment to the clause if this is expected**"
+          },
+          "partialFingerprints": {
+            "violType": "StdViol",
+            "lineHash": "2062548131",
+            "unbViolId": "4c6e8ce1-248e-3c22-838f-8fea4b0d73d5"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/someip/util/CustomConversionUtils.java"
+                },
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 11,
+                  "endColumn": 16
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "OWASP2021.A5.NCE",
+          "level": "warning",
+          "message": {
+            "text": "\"catch\" statement directly catches the general exception type 'Throwable'",
+            "markdown": "**\\[Line 125\\] \"catch\" statement directly catches the general exception type 'Throwable'**"
+          },
+          "partialFingerprints": {
+            "violType": "StdViol",
+            "lineHash": "1233981284",
+            "unbViolId": "02c2581b-de62-360e-b57e-6cf4ca8caca8"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/someip/util/CustomConversionUtils.java"
+                },
+                "region": {
+                  "startLine": 125,
+                  "startColumn": 18,
+                  "endColumn": 27
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "OWASP2021.A5.NCE",
+          "level": "warning",
+          "message": {
+            "text": "\"catch\" statement directly catches the general exception type 'Throwable'",
+            "markdown": "**\\[Line 146\\] \"catch\" statement directly catches the general exception type 'Throwable'**"
+          },
+          "partialFingerprints": {
+            "violType": "StdViol",
+            "lineHash": "1233981284",
+            "unbViolId": "0446bfc1-c53b-3be0-a23a-16cb23d4b031"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/someip/util/CustomConversionUtils.java"
+                },
+                "region": {
+                  "startLine": 146,
+                  "startColumn": 18,
+                  "endColumn": 27
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "OWASP2021.A5.NCE",
+          "level": "warning",
+          "message": {
+            "text": "\"catch\" statement directly catches the general exception type 'Throwable'",
+            "markdown": "**\\[Line 162\\] \"catch\" statement directly catches the general exception type 'Throwable'**"
+          },
+          "partialFingerprints": {
+            "violType": "StdViol",
+            "lineHash": "1233981284",
+            "unbViolId": "7965d53a-6b85-39e9-bbcd-6e3407622210"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/someip/util/CustomConversionUtils.java"
+                },
+                "region": {
+                  "startLine": 162,
+                  "startColumn": 18,
+                  "endColumn": 27
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "OWASP2021.A5.NCE",
+          "level": "warning",
+          "message": {
+            "text": "\"catch\" statement directly catches the general exception type 'Throwable'",
+            "markdown": "**\\[Line 178\\] \"catch\" statement directly catches the general exception type 'Throwable'**"
+          },
+          "partialFingerprints": {
+            "violType": "StdViol",
+            "lineHash": "1233981284",
+            "unbViolId": "6cb101c6-e9a8-34eb-b7ef-34620ff92bb2"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/someip/util/CustomConversionUtils.java"
+                },
+                "region": {
+                  "startLine": 178,
+                  "startColumn": 18,
+                  "endColumn": 27
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "OPT.CIO",
+          "level": "warning",
+          "message": {
+            "text": "Variable 'reader' is not closed within a \"finally\" block",
+            "markdown": "**\\[Line 213\\] Variable 'reader' is not closed within a \"finally\" block**"
+          },
+          "partialFingerprints": {
+            "violType": "StdViol",
+            "lineHash": "183400621",
+            "unbViolId": "046ec9bd-e01c-3f86-838d-62b1e22a46a1"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/someip/util/CustomConversionUtils.java"
+                },
+                "region": {
+                  "startLine": 213,
+                  "startColumn": 24,
+                  "endColumn": 30
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "OWASP2021.A5.DXXE",
+          "level": "error",
+          "message": {
+            "text": "XXE injection has not been disabled",
+            "markdown": "**\\[Line 214\\] XXE injection has not been disabled**"
+          },
+          "partialFingerprints": {
+            "violType": "StdViol",
+            "lineHash": "-804559146",
+            "unbViolId": "f9016c9a-7144-379c-ae7d-8de35d46dd44"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/someip/util/CustomConversionUtils.java"
+                },
+                "region": {
+                  "startLine": 214,
+                  "startColumn": 19,
+                  "endColumn": 46
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "OWASP2021.A5.DXXE",
+          "level": "error",
+          "message": {
+            "text": "XXE injection has not been disabled",
+            "markdown": "**\\[Line 28\\] XXE injection has not been disabled**"
+          },
+          "partialFingerprints": {
+            "violType": "StdViol",
+            "lineHash": "-131372002",
+            "unbViolId": "d39d915a-bf38-3b66-8e2c-8b8fd6096a25"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/someip/util/XmlUtils.java"
+                },
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 45,
+                  "endLine": 29,
+                  "endColumn": 45
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "OWASP2021.A5.DXXE",
+          "level": "error",
+          "message": {
+            "text": "XXE injection has not been disabled",
+            "markdown": "**\\[Line 70\\] XXE injection has not been disabled**"
+          },
+          "partialFingerprints": {
+            "violType": "StdViol",
+            "lineHash": "-912129536",
+            "unbViolId": "8aa0ec4f-ee13-3c0a-b6dc-a78234efd25a"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/someip/util/XmlUtils.java"
+                },
+                "region": {
+                  "startLine": 70,
+                  "startColumn": 28,
+                  "endColumn": 65
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "OWASP2021.A9.LGE",
+          "level": "error",
+          "message": {
+            "text": "The exception is neither logged nor rethrown in the \"catch\" clause. Add a comment to the clause if this is expected",
+            "markdown": "**\\[Line 156\\] The exception is neither logged nor rethrown in the \"catch\" clause\\. Add a comment to the clause if this is expected**"
+          },
+          "partialFingerprints": {
+            "violType": "StdViol",
+            "lineHash": "850749035",
+            "unbViolId": "fc0c614b-a41f-3fa3-a373-6493e5e4f7d5"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/someip/util/XmlUtils.java"
+                },
+                "region": {
+                  "startLine": 156,
+                  "startColumn": 11,
+                  "endColumn": 16
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "OPT.CTLV",
+          "level": "warning",
+          "message": {
+            "text": "Field 'debug' is used only in method 'configureLogging'",
+            "markdown": "**\\[Line 45\\] Field 'debug' is used only in method 'configureLogging'**"
+          },
+          "partialFingerprints": {
+            "violType": "StdViol",
+            "lineHash": "-722900451",
+            "unbViolId": "b1f6b5ce-fd78-39ad-88bc-29909ad30339"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/SomeipUpdater.java"
+                },
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 21,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "suppressions": [
+            {
+              "kind": "external"
+            }
+          ]
+        },
+        {
+          "ruleId": "OWASP2021.A5.NCE",
+          "level": "warning",
+          "message": {
+            "text": "\"catch\" statement directly catches the general exception type 'Exception'",
+            "markdown": "**\\[Line 58\\] \"catch\" statement directly catches the general exception type 'Exception'**"
+          },
+          "partialFingerprints": {
+            "violType": "StdViol",
+            "lineHash": "2121083616",
+            "unbViolId": "a9cd4d55-4543-38c3-ac8f-4a57c95bfeee"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/SomeipUpdater.java"
+                },
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 17,
+                  "endColumn": 26
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "OWASP2021.A5.SIO",
+          "level": "warning",
+          "message": {
+            "text": "Make sure 'System.out.println' is not a leftover debug statement",
+            "markdown": "**\\[Line 104\\] Make sure 'System\\.out\\.println' is not a leftover debug statement**"
+          },
+          "partialFingerprints": {
+            "violType": "StdViol",
+            "lineHash": "-313473000",
+            "unbViolId": "4fe2aa96-a392-3093-8753-dc8da0af19f1"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/SomeipUpdater.java"
+                },
+                "region": {
+                  "startLine": 104,
+                  "startColumn": 9,
+                  "endColumn": 33
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "OWASP2021.A5.SIO",
+          "level": "warning",
+          "message": {
+            "text": "Make sure 'System.out.println' is not a leftover debug statement",
+            "markdown": "**\\[Line 109\\] Make sure 'System\\.out\\.println' is not a leftover debug statement**"
+          },
+          "partialFingerprints": {
+            "violType": "StdViol",
+            "lineHash": "-313473000",
+            "unbViolId": "438f52c0-d666-3f02-b772-04a4c393ed8d"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/SomeipUpdater.java"
+                },
+                "region": {
+                  "startLine": 109,
+                  "startColumn": 9,
+                  "endColumn": 33
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "OWASP2021.A5.SIO",
+          "level": "warning",
+          "message": {
+            "text": "Make sure 'System.out.println' is not a leftover debug statement",
+            "markdown": "**\\[Line 114\\] Make sure 'System\\.out\\.println' is not a leftover debug statement**"
+          },
+          "partialFingerprints": {
+            "violType": "StdViol",
+            "lineHash": "-313473000",
+            "unbViolId": "072bfd91-63ee-38c3-b337-55637572ef12"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/SomeipUpdater.java"
+                },
+                "region": {
+                  "startLine": 114,
+                  "startColumn": 9,
+                  "endColumn": 33
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "EXCEPT.NTERR",
+          "level": "warning",
+          "message": {
+            "text": "Avoid throwing 'RuntimeException'",
+            "markdown": "**\\[Line 95\\] Avoid throwing 'RuntimeException'**"
+          },
+          "partialFingerprints": {
+            "violType": "StdViol",
+            "lineHash": "1348252713",
+            "unbViolId": "89a0ef8b-412f-370e-a4ab-b4a4f5ab7ab0"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/Arxml2Xml.java"
+                },
+                "region": {
+                  "startLine": 95,
+                  "startColumn": 13,
+                  "endColumn": 80
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "OWASP2021.A5.NTERR",
+          "level": "warning",
+          "message": {
+            "text": "Avoid throwing 'RuntimeException'",
+            "markdown": "**\\[Line 95\\] Avoid throwing 'RuntimeException'**"
+          },
+          "partialFingerprints": {
+            "violType": "StdViol",
+            "lineHash": "1348252713",
+            "unbViolId": "045a5f9f-73d8-306c-bd99-24478446f239"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/Arxml2Xml.java"
+                },
+                "region": {
+                  "startLine": 95,
+                  "startColumn": 13,
+                  "endColumn": 80
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "OWASP2021.A5.NCE",
+          "level": "warning",
+          "message": {
+            "text": "\"catch\" statement directly catches the general exception type 'Exception'",
+            "markdown": "**\\[Line 105\\] \"catch\" statement directly catches the general exception type 'Exception'**"
+          },
+          "partialFingerprints": {
+            "violType": "StdViol",
+            "lineHash": "100324464",
+            "unbViolId": "b2891662-b92a-3c0a-9177-c415e4360a5e"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/Arxml2Xml.java"
+                },
+                "region": {
+                  "startLine": 105,
+                  "startColumn": 18,
+                  "endColumn": 27
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "OWASP2021.A5.DXXE",
+          "level": "error",
+          "message": {
+            "text": "XXE injection has not been disabled",
+            "markdown": "**\\[Line 37\\] XXE injection has not been disabled**"
+          },
+          "partialFingerprints": {
+            "violType": "StdViol",
+            "lineHash": "-804559146",
+            "unbViolId": "40f1a85c-6d10-3e61-b469-9b67b7dc2711"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/updater/utils/XmlUtils.java"
+                },
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 19,
+                  "endColumn": 46
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "OWASP2021.A5.DXXE",
+          "level": "error",
+          "message": {
+            "text": "XXE injection has not been disabled",
+            "markdown": "**\\[Line 42\\] XXE injection has not been disabled**"
+          },
+          "partialFingerprints": {
+            "violType": "StdViol",
+            "lineHash": "-804559146",
+            "unbViolId": "a3779616-d8d2-34fd-8590-a05492e46db6"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/updater/utils/XmlUtils.java"
+                },
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 19,
+                  "endColumn": 46
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "OWASP2021.A5.DXXE",
+          "level": "error",
+          "message": {
+            "text": "XXE injection has not been disabled",
+            "markdown": "**\\[Line 47\\] XXE injection has not been disabled**"
+          },
+          "partialFingerprints": {
+            "violType": "StdViol",
+            "lineHash": "-804559146",
+            "unbViolId": "25d54aab-0a7f-3efa-b3f7-3dc1b2cee733"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/updater/utils/XmlUtils.java"
+                },
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 19,
+                  "endColumn": 46
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "OWASP2021.A3.CDBV",
+          "level": "error",
+          "message": {
+            "text": "The data in 'methodConfigFile' may not have been canonicalized before being validated",
+            "markdown": "**\\[Line 110\\] The data in 'methodConfigFile' may not have been canonicalized before being validated**"
+          },
+          "partialFingerprints": {
+            "violType": "StdViol",
+            "lineHash": "1598581989",
+            "unbViolId": "ad5a6046-a33a-3a02-8923-ce9710fc8ae9"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/xml2xsd/Xml2Xsd.java"
+                },
+                "region": {
+                  "startLine": 110,
+                  "startColumn": 76,
+                  "endColumn": 92
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/SimulatorManagerApplication.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/CommonMessages.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/DefaultController.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuAndAppConfigCache.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuAppConfigController.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuAppConfigService.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuAppConfigValidator.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuCommonValidator.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuConfigController.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuConfigService.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/EcuConfigValidator.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/ResponseResult.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/ValidationHandler.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/VsomeipConfiguration.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/dto/EcuAppConfigDto.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/common/dto/EcuConfigDto.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/config/OpenApiConfig.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/exception/BadRequestException.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/exception/ConflictException.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/exception/ExceptionHandlers.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/exception/NotFoundException.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/exception/ServerException.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/exception/ValidationException.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/i18n/Localization.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/license/LicenseMessages.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/license/SomeIpLicenseClient.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/license/SomeIpLicenseClientConsoleContext.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/license/SomeIpLicenseClientLogger.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/license/SomeIpLicenseFilterConfig.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/license/SomeIpLicenseReleaseListener.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/util/AppEnvUtils.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/util/JsonUtils.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/util/ParameterValidationUtils.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/java/com/parasoft/soavirt/sm/util/UtilMessages.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-manager/src/main/resources/i18n/messages.properties"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/common/util/CoderUtil.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/someip/config/SomeIpConfig.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/someip/message/DataType.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/someip/message/MessageField.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/someip/message/SomeIpMessageConverter.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/someip/message/SomeIpMessageSchemaGenerator.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/someip/message/SomeIpMessageType.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/someip/message/SomeIpNativeToXml.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/someip/message/SomeIpSdMessageConverter.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/someip/message/SomeIpSdNativeToXml.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/someip/message/SomeIpSdXmlToNative.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/someip/message/SomeIpXmlToNative.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/someip/util/CustomConversionUtils.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/someip/util/CyclicCounter.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/someip/util/DataTypeUtils.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/java/com/parasoft/soavirt/someip/util/XmlUtils.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/resources/parasoft-extension-logger.properties"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/resources/parasoft-extension.properties"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/resources/parasoft-extension.xml"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/resources/parasoft-extension_zh_CN.properties"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/resources/xml/SOME_IP-SD.xml"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/custom_messages/someip-common/src/main/resources/xml/SOME_IP.xml"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator/src/main/java/com/parasoft/soavirt/someip/SimulatorApplication.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator/src/main/java/com/parasoft/soavirt/someip/common/DefaultController.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator/src/main/java/com/parasoft/soavirt/someip/config/OpenApiConfig.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-common/src/main/java/com/parasoft/soavirt/simulator/config/InvalidConfigException.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-common/src/main/java/com/parasoft/soavirt/simulator/config/deployment/ConsumerEcuConfig.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-common/src/main/java/com/parasoft/soavirt/simulator/config/deployment/ProviderEcuConfig.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-common/src/main/java/com/parasoft/soavirt/simulator/config/deployment/ServiceInstanceConfig.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-common/src/main/java/com/parasoft/soavirt/simulator/config/deployment/SimulatorServiceInstanceConfigs.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-common/src/main/java/com/parasoft/soavirt/simulator/config/someip/EcuConfig.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-common/src/main/java/com/parasoft/soavirt/simulator/config/someip/EcuServiceDiscoveryConfig.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-common/src/main/java/com/parasoft/soavirt/simulator/config/someip/Protocol.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-common/src/main/java/com/parasoft/soavirt/simulator/config/someip/ServiceConsumerConfig.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-common/src/main/java/com/parasoft/soavirt/simulator/config/someip/ServiceEventConfig.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-common/src/main/java/com/parasoft/soavirt/simulator/config/someip/ServiceEventGroupConfig.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-common/src/main/java/com/parasoft/soavirt/simulator/config/someip/ServiceInstanceConfig.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-common/src/main/java/com/parasoft/soavirt/simulator/config/someip/ServiceProviderConfig.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-common/src/main/java/com/parasoft/soavirt/simulator/config/someip/SomeIpCommunicationConfig.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-common/src/main/java/com/parasoft/soavirt/simulator/config/someip/SomeIpCommunicationConfigUtils.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-common/src/main/java/com/parasoft/soavirt/simulator/ctx/ApplicationConfig.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-common/src/main/java/com/parasoft/soavirt/simulator/ctx/EventConfig.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-common/src/main/java/com/parasoft/soavirt/simulator/ctx/ServiceChannelConfig.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-common/src/main/java/com/parasoft/soavirt/simulator/ctx/SubscribeConfig.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-common/src/main/java/com/parasoft/soavirt/simulator/deployment/EcuApplicationConfig.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-common/src/main/java/com/parasoft/soavirt/simulator/deployment/SimulatorApplicationConfig.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/middlewares/someip-middleware/simulator-common/src/main/java/com/parasoft/soavirt/simulator/deployment/SimulatorDeploymentInfoUtils.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/SomeipUpdater.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/Arxml2Xml.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/Arxml2XmlException.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/Arxml2XmlUtils.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/ArxmlParserUtils.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/ArxmlParsingException.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/AutosarRef.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/DefaultTransformationProps.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/IArxmlParser.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/Interface2XmlHelper.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/IParamToXml.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/IServiceMethodToXml.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/ISomeipEventDeployment.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/ISomeipServiceInstance.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/ITransformationProps.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/ProvidedSomeipServiceInstance.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/RequiredSomeipServiceInstance.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/ServiceInstances.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/ServiceInterface.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/ServiceInterfaceNotExistException.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/SomeipEvent.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/SomeipField.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/SomeipFieldGet.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/SomeipFieldNotifier.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/SomeipFieldSet.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/SomeipMethod.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/SomeipMethodArgument.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/TransformationProps.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/TransformationPropsConfig.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/TransformationPropsConfigMapping.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/arxml/SomeipEventGroup.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/arxml/SomeipProvidedEventGroup.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/arxml/SomeipRequiredEventGroup.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/deployment/CommunicationConnectorInfo.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/deployment/DeploymentInfo.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/deployment/EventInfo.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/deployment/FieldGetterInfo.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/deployment/FieldInfo.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/deployment/FieldNotifierInfo.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/deployment/FieldSetterInfo.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/deployment/IEventGroupInfo.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/deployment/IEventInfo.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/deployment/InitialBehaviorInfo.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/deployment/IServiceInstanceInfo.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/deployment/MachineInfo.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/deployment/MethodInfo.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/deployment/NetworkEndpointInfo.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/deployment/ProvidedEventGroupInfo.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/deployment/ProvidedServiceInstanceInfo.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/deployment/RequestResponseDelayInfo.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/deployment/RequiredEventGroupInfo.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/deployment/RequiredServiceInstanceInfo.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/deployment/SdClientConfig.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/deployment/SdClientEventGroupTimingConfig.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/deployment/SdServerConfig.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/deployment/SdServerEventGroupTimingConfig.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/deployment/ServiceDiscoverConfig.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/deployment/ServiceInfo.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/deployment/TransportProtocol.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/type/BaseType.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/type/BasicType.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/type/BasicTypes.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/type/DynamicLengthArrayType.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/type/FixedLengthArrayType.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/type/FixedLengthStringType.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/type/ImplementationType.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/type/StandardTypes.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/type/StringType.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/arxml2xml/type/StructureType.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/updater/UpdateExtension.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/updater/UpdateExtensionException.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/updater/config/AttributeConfig.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/updater/config/ElementConfig.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/updater/config/MethodConfig.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/updater/utils/ArxmlDeploymentInfoUtils.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/updater/utils/FileUtils.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/updater/utils/JsonUtils.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/updater/utils/UpdaterConstants.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/updater/utils/UpdaterUtils.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/updater/utils/ValidationUtils.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/updater/utils/XmlUtils.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/updater/xml/XmlAttributeDef.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/xml2config/PayloadElementConfigs.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/xml2config/Xml2ConfigUtil.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/xml2xsd/Xml2Xsd.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/xml2xsd/Xml2XsdConvertUtils.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/xml2xsd/Xml2XsdException.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/java/com/parasoft/soavirt/someip/xml2xsd/XmlUpdateUtils.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/resources/SOME_IP-header-template.xml"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-common/src/main/resources/tinylog.properties"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/ArxmlParserForHumanHorizons.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/arxml/ApplicationEndpoint.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/arxml/ApplicationPrimitiveDataType.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/arxml/ApplicationSwComponentType.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/arxml/ArgumentDataPrototype.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/arxml/ClientServerInterface.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/arxml/ClientServerOperation.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/arxml/ClientServerToSignalMapping.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/arxml/DataMappings.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/arxml/DataTransformation.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/arxml/DataTransformationSet.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/arxml/DataTypeMappingSet.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/arxml/EventHandler.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/arxml/ImplementationDataType.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/arxml/ImplementationDataTypeElement.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/arxml/ISignal.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/arxml/ISignalTriggering.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/arxml/PduTriggering.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/arxml/PPortPrototype.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/arxml/ProvidedServiceInstance.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/arxml/RPortPrototype.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/arxml/SdServerConfig.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/arxml/SenderReceiverInterface.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/arxml/SenderReceiverToSignalMapping.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/arxml/SoAdRoutingGroup.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/arxml/SocketConnectionIpduIdentifier.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/arxml/SomeipTransformationDescription.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/arxml/SomeipTransformationISignalPropsConditional.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/arxml/SwBaseType.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/arxml/SwcInternalBehavior.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/arxml/SwDataDefPropsConditional.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/arxml/SwTextProps.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/arxml/SystemMapping.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/arxml/SystemSignal.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/arxml/TranformationTechnology.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator-human-horizons/src/main/java/com/parasoft/soavirt/updater/someip/hh/arxml/VariableDataPrototype.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator/src/main/java/com/parasoft/soavirt/someip/arxml2xml/ArxmlParser.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator/src/main/java/com/parasoft/soavirt/someip/arxml2xml/arxml/CommConnectors.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator/src/main/java/com/parasoft/soavirt/someip/arxml2xml/arxml/CommunicationConnectorRefConditional.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator/src/main/java/com/parasoft/soavirt/someip/arxml2xml/arxml/CommunicationConnectors.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator/src/main/java/com/parasoft/soavirt/someip/arxml2xml/arxml/EthernetCluster.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator/src/main/java/com/parasoft/soavirt/someip/arxml2xml/arxml/EthernetClusterConditional.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator/src/main/java/com/parasoft/soavirt/someip/arxml2xml/arxml/EthernetCommunicationConnector.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator/src/main/java/com/parasoft/soavirt/someip/arxml2xml/arxml/EthernetPhysicalChannel.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator/src/main/java/com/parasoft/soavirt/someip/arxml2xml/arxml/InitialBehavior.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator/src/main/java/com/parasoft/soavirt/someip/arxml2xml/arxml/Ipv4Configuration.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator/src/main/java/com/parasoft/soavirt/someip/arxml2xml/arxml/Machine.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator/src/main/java/com/parasoft/soavirt/someip/arxml2xml/arxml/MachineDesign.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator/src/main/java/com/parasoft/soavirt/someip/arxml2xml/arxml/NetworkEndpoint.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator/src/main/java/com/parasoft/soavirt/someip/arxml2xml/arxml/NetworkEndpointAddresses.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator/src/main/java/com/parasoft/soavirt/someip/arxml2xml/arxml/PhysicalChannels.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator/src/main/java/com/parasoft/soavirt/someip/arxml2xml/arxml/RequestResponseDelay.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator/src/main/java/com/parasoft/soavirt/someip/arxml2xml/arxml/SomeipSdClientEventGroupTimingConfig.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator/src/main/java/com/parasoft/soavirt/someip/arxml2xml/arxml/SomeipSdClientServiceInstanceConfig.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator/src/main/java/com/parasoft/soavirt/someip/arxml2xml/arxml/SomeipSdServerEventGroupTimingConfig.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator/src/main/java/com/parasoft/soavirt/someip/arxml2xml/arxml/SomeipSdServerServiceInstanceConfig.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator/src/main/java/com/parasoft/soavirt/someip/arxml2xml/arxml/SomeipServiceDiscovery.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator/src/main/java/com/parasoft/soavirt/someip/arxml2xml/arxml/SomeipServiceInstanceToMachineMapping.java"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:/E:/RLWorkspce/workspace_someip/soavirt-someip/modules/extension-generators/someip-extension-generator/src/main/java/com/parasoft/soavirt/someip/arxml2xml/arxml/Vlan.java"
+          }
+        }
+      ]
+    }
+  ]
+}
