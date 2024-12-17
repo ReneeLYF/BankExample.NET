@@ -1,4 +1,4 @@
-name: dotTEST Simple Workflow
+name: jTest Simple Workflow
 
 # Specifies the name of the GitHub events that trigger the workflow.
 on:
