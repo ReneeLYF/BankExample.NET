@@ -59,4 +59,5 @@ jobs:
 #          path: 'reports'
 
       - name: Generate The Structure of Summary Details Table
-        uses: ReneeLYF/parasoft-covergae-action-dev@main
+#        uses: ReneeLYF/parasoft-covergae-action-dev@main
+        uses: parasoft/parasoft-coverage-action@renee_cicd959
