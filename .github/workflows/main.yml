@@ -58,6 +58,5 @@ jobs:
 #          name: DottestReports
 #          path: 'reports'
 
-
       - name: Generate The Structure of Summary Details Table
         uses: ReneeLYF/parasoft-covergae-action-dev@main
