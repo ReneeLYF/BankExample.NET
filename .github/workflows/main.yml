@@ -24,6 +24,9 @@ jobs:
     # Specifies the type of runner that the job will run on.
     runs-on: self-hosted
 
+    env:
+      ACTIONS_RUNNER_DEBUG: true
+      ACTIONS_STEP_DEBUG: true
     # Steps represent a sequence of tasks that will be executed as part of the job.
     steps:
       # Checks out your repository under $GITHUB_WORKSPACE, so that your job can access it.
@@ -62,5 +65,5 @@ jobs:
 #        uses: ReneeLYF/parasoft-covergae-action-dev@main
         uses: parasoft/parasoft-coverage-action@merge_test_br
         with:
-          report: "**/coverage.xml"
+          report: "**/jtest/coverage.xml"
 #          parasoftToolOrJavaRootPath: ""
