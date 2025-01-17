@@ -30,40 +30,35 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job.
     steps:
       # Checks out your repository under $GITHUB_WORKSPACE, so that your job can access it.
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-#      # Runs code analysis with dotTEST.
-#      - name: Run Parasoft dotTEST
-#        id: dottest
-#        # Specifies the action to run.
+##      # Runs code analysis with dotTEST.
+#      - name: Static Analysis with Parasoft dotTEST
+#        id: dottest-sa
+##        # Specifies the action to run.
 #        uses: parasoft/run-dottest-action@2.0.1
 #        with:
 #          installDir: 'E:\Parasoft\Products\DOTTEST\2024.1'
 #          testConfig: '.\dottest_settings.properties'
 #          solution: '.\BankExample.NET.sln'
 #          settings: '.\localsettings.properties'
-#          reportDir: '.\reports\static'
+#          reportDir: '.\reports\dottest\static'
 #          sarifMode: 'legacy'
 
-#         Uploads analysis results in the SARIF format, so that they are displayed as GitHub code scanning alerts.
-#      - name: Upload results (SARIF)
-#        uses: github/codeql-action/upload-sarif@v2
-#        if: always()
-#        with:
-#          sarif_file: '.\reports\static\report.sarif'
-      
-      # Uploads an archive that includes all report files (.xml, .html, .sarif).
-#      - name: Archive reports
-#        uses: actions/upload-artifact@v3
-
-#        if: always()
-#        with:
-#          name: DottestReports
-#          path: 'reports'
+      - name: Unit Test with Parasoft dotTEST
+        id: dottest-ut
+        uses: parasoft/run-dottest-action@2.0.1
+        with:
+          installDir: 'E:\Parasoft\Products\DOTTEST\2024.1'
+          testConfig: 'builtin://Run VSTest Tests with Coverage'
+          solution: '.\BankExample.NET.WithTests.sln'
+          settings: '.\localsettings.properties'
+          reportDir: '.\reports\dottest\ut'
 
       - name: Generate The Structure of Summary Details Table
 #        uses: ReneeLYF/parasoft-covergae-action-dev@main
         uses: parasoft/parasoft-coverage-action@jason_cicd961&&cicd983
         with:
-          report: "**/jtest/coverage.xml"
+          report: "**/dottest/ut/coverage.xml"
 #          parasoftToolOrJavaRootPath: ""
