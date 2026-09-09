@@ -58,7 +58,7 @@ jobs:
 
       - name: Generate The Structure of Summary Details Table
 #        uses: ReneeLYF/parasoft-covergae-action-dev@main
-        uses: parasoft/parasoft-coverage-action@jason_cicd961&&cicd983
+        uses: parasoft/parasoft-coverage-action@cicd-1121
         with:
           report: "**/dottest/ut/coverage.xml"
 #          parasoftToolOrJavaRootPath: ""
